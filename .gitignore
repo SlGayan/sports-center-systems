@@ -1,0 +1,36 @@
+# Composer / PHP dependencies
+/vendor/
+
+# Node.js dependencies (if you have npm for frontend)
+node_modules/
+
+# Environment / Config files
+/config/database.php
+/.env
+
+# Logs and temporary files
+*.log
+*.cache
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor files
+/.idea/
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
+
+# XAMPP / Local server folders
+/tmp/
+/xampp/php/tmp/
+
+# Backup files
+*~ 
+*.bak
+*.old
+
+# Uploaded media (optional, ignore if you want to keep in repo)
+uploads/

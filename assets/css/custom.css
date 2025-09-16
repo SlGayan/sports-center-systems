@@ -1,0 +1,399 @@
+:root {
+    /* Campus Color Scheme - overriding Bootstrap defaults */
+    --bs-primary: #1a4f8c;
+    --bs-secondary: #e63946;
+    --bs-success: #2a9d8f;
+    --bs-danger: #e63946;
+    --bs-warning: #f4a261;
+    --bs-info: #457b9d;
+    --bs-light: #f1faee;
+    --bs-dark: #1d3557;
+}
+
+/* Custom navbar styling */
+.navbar-campus {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-dark) 100%);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Equipment cards */
+.equipment-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.equipment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* QR scanner button */
+.btn-scan {
+    background: var(--bs-success);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+
+.btn-scan:hover {
+    background: #22867a;
+    transform: scale(1.05);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Equipment card enhancements */
+.equipment-card .card-img-top {
+    border-bottom: 1px solid var(--bs-light);
+}
+
+.equipment-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.equipment-card .card-text {
+    font-size: 0.9rem;
+}
+
+/* Search and filter styling */
+#equipmentSearch:focus,
+#categoryFilter:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(26, 79, 140, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .equipment-card .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Reservation form enhancements */
+#reservationForm .form-label {
+    font-weight: 600;
+    color: var(--bs-dark);
+}
+
+#reservationForm .form-control:focus,
+#reservationForm .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(26, 79, 140, 0.25);
+}
+
+/* Time slot buttons */
+.btn-check:checked + .btn {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white;
+}
+
+/* Availability calendar */
+.availability-calendar .col {
+    padding: 0.5rem;
+    border-right: 1px solid var(--bs-light);
+}
+
+.availability-calendar .col:last-child {
+    border-right: none;
+}
+
+/* Loading state */
+.btn:disabled {
+    opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #reservationForm .btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .time-slot-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+}
+
+/* QR Scanner specific styles */
+#scanner-container {
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.scanner-overlay {
+    border-radius: 12px;
+}
+
+/* Manual entry modal */
+#manualEntryModal .form-control {
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Transaction history */
+.list-group-item {
+    border-color: var(--bs-light);
+    padding: 0.75rem 1rem;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+/* Help section */
+.collapse {
+    transition: all 0.3s ease;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    #scanner-container {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+    
+    .scanner-frame {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    
+    #qr-video {
+        height: 300px !important;
+    }
+}
+
+/* Vibration simulation for mobile feedback */
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+
+.scan-success {
+    animation: vibrate 0.3s ease-in-out;
+}
+
+/* Admin Dashboard Specific Styles */
+.admin-dashboard .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.admin-dashboard .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Quick action buttons */
+.quick-action-btn {
+    padding: 1.5rem 1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.quick-action-btn:hover {
+    border-color: var(--bs-primary);
+    transform: scale(1.05);
+}
+
+.quick-action-btn i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Stats cards */
+.stats-card {
+    border-left: 4px solid transparent;
+}
+
+.stats-card.bg-primary { border-left-color: var(--bs-primary); }
+.stats-card.bg-success { border-left-color: var(--bs-success); }
+.stats-card.bg-warning { border-left-color: var(--bs-warning); }
+.stats-card.bg-info { border-left-color: var(--bs-info); }
+
+/* Activity list */
+.activity-list .list-group-item {
+    border-left: 3px solid transparent;
+    transition: background-color 0.2s ease;
+}
+
+.activity-list .list-group-item:hover {
+    background-color: var(--bs-light);
+}
+
+.activity-list .list-group-item:nth-child(1) { border-left-color: var(--bs-success); }
+.activity-list .list-group-item:nth-child(2) { border-left-color: var(--bs-info); }
+.activity-list .list-group-item:nth-child(3) { border-left-color: var(--bs-warning); }
+.activity-list .list-group-item:nth-child(4) { border-left-color: var(--bs-primary); }
+
+/* Progress bars */
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+/* System alerts */
+.alert {
+    border: none;
+    border-left: 4px solid;
+}
+
+.alert-warning { border-left-color: var(--bs-warning); }
+.alert-info { border-left-color: var(--bs-info); }
+.alert-success { border-left-color: var(--bs-success); }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-dashboard .col-md-3 {
+        margin-bottom: 1rem;
+    }
+    
+    .quick-action-btn {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .quick-action-btn i {
+        font-size: 1.2rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Dark mode support */
+[data-bs-theme="dark"] .admin-dashboard .card {
+    background: var(--bs-dark);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+[data-bs-theme="dark"] .activity-list .list-group-item:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* Profile specific styles */
+.profile-stats .col-4 {
+    border-right: 1px solid var(--bs-border-color);
+}
+
+.profile-stats .col-4:last-child {
+    border-right: none;
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.timeline-content {
+    margin-left: 1rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.75rem;
+    top: 2.5rem;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--bs-border-color);
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+/* Reservation table styles */
+.reservation-table img {
+    object-fit: cover;
+}
+
+/* Rating stars */
+.rating-stars {
+    color: #ffc107;
+}
+
+/* Tab content animations */
+.tab-pane {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .profile-stats .col-4 {
+        border-right: none;
+        border-bottom: 1px solid var(--bs-border-color);
+        padding: 1rem 0;
+    }
+    
+    .profile-stats .col-4:last-child {
+        border-bottom: none;
+    }
+    
+    .timeline {
+        padding-left: 2rem;
+    }
+    
+    .timeline-badge {
+        left: -2.5rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+}
