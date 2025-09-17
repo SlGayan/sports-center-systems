@@ -16,14 +16,14 @@
 </head>
 <body>
     <!-- Navigation will be included here -->
-    <?php include_once 'partials/navbar.php'; ?>
+    <?php include_once '../partials/navbar.php'; ?>
     
     <main class="container-fluid py-4">
         <?php echo $content; ?>
     </main>
 
     <!-- Footer will be included here -->
-    <?php include_once 'partials/footer.php'; ?>
+    <?php include_once '../partials/footer.php'; ?>
 
     <!-- Bootstrap & jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
