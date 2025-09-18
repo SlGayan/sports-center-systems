@@ -94,7 +94,7 @@ $content = <<<HTML
 
                 <!-- Login Link -->
                 <div class="text-center mt-4">
-                    <p class="mb-0">Already have an account? <a href="/login.php" class="text-decoration-none">Sign in</a></p>
+                    <p class="mb-0">Already have an account? <a href="./login.php" class="text-decoration-none">Sign in</a></p>
                 </div>
             </div>
         </div>
