@@ -81,7 +81,7 @@ $content = <<<HTML
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="agreeTerms" required>
                         <label class="form-check-label" for="agreeTerms">
-                            I agree to the <a href="/terms" target="_blank">terms and conditions</a>
+                            I agree to the <a href="../../commingSoon.php" target="_blank">terms and conditions</a>
                         </label>
                     </div>
 
