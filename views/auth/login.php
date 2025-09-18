@@ -96,7 +96,7 @@ $content = '
                     <!-- Help Links -->
                     <div class="text-center mt-4">
                         <p class="mb-1">
-                            <a href="../../" class="text-decoration-none">Forgot password?</a>
+                            <a href="../../commingSoon.php" class="text-decoration-none">Forgot password?</a>
                         </p>
                         <p class="mb-0">
                             Don\'t have an account? <a href="./register.php" class="text-decoration-none">Sign up</a>
