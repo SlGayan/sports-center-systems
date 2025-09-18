@@ -55,7 +55,7 @@
                 <div class="mb-3">
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-geo-alt text-primary me-2"></i>
-                        <span class="text-muted">Sports Center Building, Campus University</span>
+                        <span class="text-muted">Sports Center Building, Sabaragamuwa University</span>
                     </div>
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-telephone text-primary me-2"></i>
@@ -90,7 +90,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <p class="text-muted mb-0">
-                    &copy; 2024 Campus Sports Center. All rights reserved.
+                    &copy; 2025 Gayan. All rights reserved.
                 </p>
             </div>
             <div class="col-md-6 text-md-end">
@@ -113,7 +113,7 @@
 
 <style>
 footer {
-    background: linear-gradient(135deg, var(--bs-dark) 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #51b7f6ff 100%);
 }
 
 .hover-primary {
@@ -138,7 +138,7 @@ footer {
 
 /* Social icons */
 footer a.text-muted:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-secoundary) !important;
     transform: translateY(-2px);
 }
 

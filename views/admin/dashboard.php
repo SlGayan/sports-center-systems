@@ -3,7 +3,7 @@
 $is_admin = true; // Would come from session in real implementation
 
 if (!$is_admin) {
-    header('Location: /login.php');
+    header('Location: /views/auth/login.php');
     exit;
 }
 
@@ -21,9 +21,9 @@ $content = '
                     <i class="bi bi-bell"></i>
                     <span class="badge bg-danger">3</span>
                 </button>
-                <button class="btn btn-outline-primary">
+                <a class="btn btn-outline-primary " href="./profile.php">
                     <i class="bi bi-person-circle"></i> Admin User
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -97,25 +97,25 @@ $content = '
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-6 col-md-3">
-                        <a href="/admin/equipment.php" class="btn btn-outline-primary w-100">
+                        <a href="./equipment.php" class="btn btn-outline-primary w-100">
                             <i class="bi bi-plus-circle d-block fs-2 mb-2"></i>
                             Add Equipment
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="/admin/users.php" class="btn btn-outline-secondary w-100">
+                        <a href="./users.php" class="btn btn-outline-secondary w-100">
                             <i class="bi bi-people d-block fs-2 mb-2"></i>
                             Manage Users
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="/admin/reports.php" class="btn btn-outline-success w-100">
+                        <a href="./reports.php" class="btn btn-outline-success w-100">
                             <i class="bi bi-graph-up d-block fs-2 mb-2"></i>
                             Generate Reports
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="/admin/maintenance.php" class="btn btn-outline-warning w-100">
+                        <a href="../../commingSoon.php" class="btn btn-outline-warning w-100">
                             <i class="bi bi-tools d-block fs-2 mb-2"></i>
                             Maintenance
                         </a>
@@ -230,7 +230,7 @@ $content = '
             </div>
             <div class="card-body">
                 <div class="d-grid gap-2">
-                    <button class="btn btn-outline-primary">
+                    <button class="btn btn-outline-primary" >
                         <i class="bi bi-download me-2"></i>Daily Usage Report
                     </button>
                     <button class="btn btn-outline-secondary">

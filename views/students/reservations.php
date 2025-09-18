@@ -8,7 +8,7 @@ $content = '
                 <h1 class="h2 mb-1">My Reservations</h1>
                 <p class="text-muted mb-0">View and manage your equipment reservations</p>
             </div>
-            <a href="/equipment.php" class="btn btn-primary">
+            <a href="./equipment.php" class="btn btn-primary">
                 <i class="bi bi-plus-circle me-2"></i>New Reservation
             </a>
         </div>

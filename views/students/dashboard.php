@@ -44,20 +44,31 @@ function renderAvailableEquipment($equipment) {
 
 // Page Content
 $content = <<<HTML
-<div class="row">
-    <div class="col-12">
-        <h1 class="h2 mb-4">Sports Equipment Dashboard</h1>
-    </div>
 </div>
+ <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 class="h2 mb-1">Sports Equipment Dashboard</h1>
+                <p class="text-muted mb-0">Sports Center Management System</p>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary">
+                    <i class="bi bi-bell"></i>
+                    <span class="badge bg-danger">3</span>
+                </button>
+                <a class="btn btn-outline-primary " href="./profile.php">
+                    <i class="bi bi-person-circle"></i> User
+                </a>
+            </div>
+        </div>
 
 <!-- Quick Actions -->
 <div class="row mb-4">
     <div class="col-12">
         <div class="d-grid gap-2 d-md-flex">
-            <a href="/scan.php" class="btn btn-scan me-md-2">
+            <a href="./scan.php" class="btn btn-scan  me-md-2">
                 <i class="bi bi-upc-scan me-2"></i>Scan QR Code
             </a>
-            <a href="/equipment.php" class="btn btn-primary">
+            <a href="./equipment.php" class="btn btn-primary me-md-2 ">
                 <i class="bi bi-search me-2"></i>Browse Equipment
             </a>
         </div>

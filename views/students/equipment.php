@@ -5,7 +5,7 @@ $content = '
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h1 class="h2">Browse Equipment</h1>
             <div class="d-none d-md-block">
-                <a href="/dashboard.php" class="btn btn-outline-secondary">
+                <a href="./dashboard.php" class="btn btn-outline-secondary">
                     <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
                 </a>
             </div>
@@ -76,7 +76,7 @@ foreach ($equipment as $item) {
                 <p class="card-text text-muted small">' . ucfirst($item['category']) . ' Equipment</p>
                 <div class="mt-auto">
                     ' . ($item['status'] == 'available' ? '
-                    <a href="/reserve.php?id=' . $item['id'] . '" class="btn btn-primary w-100">
+                    <a href="./reserve.php?id=' . $item['id'] . '" class="btn btn-primary w-100">
                         <i class="bi bi-calendar-plus me-2"></i>Reserve
                     </a>
                     ' : '

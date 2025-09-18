@@ -1,13 +1,14 @@
 :root {
     /* Campus Color Scheme - overriding Bootstrap defaults */
     --bs-primary: #1a4f8c;
+    --bs-secoundary: #c9cbcc;
     --bs-secondary: #e63946;
     --bs-success: #2a9d8f;
     --bs-danger: #e63946;
     --bs-warning: #f4a261;
     --bs-info: #457b9d;
     --bs-light: #f1faee;
-    --bs-dark: #1d3557;
+    --bs-dark: #2195e1;
 }
 
 /* Custom navbar styling */
@@ -30,6 +31,13 @@
 
 /* QR scanner button */
 .btn-scan {
+    background: var(--bs-success);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+.btn-browse {
     background: var(--bs-success);
     border: none;
     padding: 1rem 2rem;

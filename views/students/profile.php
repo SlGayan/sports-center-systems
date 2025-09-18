@@ -109,7 +109,7 @@ $content = '
                     </div>
                 </div>
                 <div class="text-center mt-3">
-                    <a href="/reservations.php" class="btn btn-sm btn-outline-primary">View All Reservations</a>
+                    <a href="./reservations.php" class="btn btn-sm btn-outline-primary">View All Reservations</a>
                 </div>
             </div>
         </div>

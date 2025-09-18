@@ -153,6 +153,5 @@ $(document).ready(function() {
 });
 </script>
 HTML;
-
 include '../layouts/base.php';
 ?>

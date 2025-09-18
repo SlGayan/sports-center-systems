@@ -17,7 +17,7 @@ $content = '
     <div class="col-12 col-md-8 col-lg-6">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h1 class="h2">Reserve Equipment</h1>
-            <a href="/equipment.php" class="btn btn-outline-secondary">
+            <a href="./equipment.php" class="btn btn-outline-secondary">
                 <i class="bi bi-arrow-left me-2"></i>Back to Browse
             </a>
         </div>
@@ -46,7 +46,7 @@ $content = '
                 <h5 class="card-title mb-0">Reservation Details</h5>
             </div>
             <div class="card-body">
-                <form id="reservationForm" action="/process_reservation.php" method="POST">
+                <form id="reservationForm" action="./reservations.php" method="POST">
                     <input type="hidden" name="equipment_id" value="' . $equipment_id . '">
                     
                     <!-- Date Selection -->
@@ -94,7 +94,7 @@ $content = '
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="agreeTerms" name="agree_terms" required>
                         <label class="form-check-label" for="agreeTerms">
-                            I agree to the <a href="/terms.php" target="_blank">terms and conditions</a> and 
+                            I agree to the <a href="../../commingSoon.php" target="_blank">terms and conditions</a> and 
                             understand that I am responsible for this equipment
                         </label>
                     </div>
@@ -214,7 +214,7 @@ $(document).ready(function() {
         // Simulate form submission
         setTimeout(() => {
             alert("Reservation successful! You will receive a confirmation email.");
-            window.location.href = "/dashboard.php";
+            window.location.href = "./dashboard.php";
         }, 1500);
     });
 });

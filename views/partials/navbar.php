@@ -7,7 +7,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <nav class="navbar navbar-expand-lg navbar-campus navbar-dark sticky-top">
     <div class="container-fluid">
         <!-- Brand -->
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="../../index.php">
             <i class="bi bi-trophy-fill me-2"></i>
             <span class="fw-bold">Campus Sports Center</span>
         </a>
@@ -23,22 +23,22 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <?php if ($current_role === 'student'): ?>
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'dashboard.php' ? 'active' : '' ?>" href="../students/dashboard.php">
+                    <a class="nav-link <?= $current_page === '../students/dashboard.php' ? 'active' : '' ?>" href="../students/dashboard.php">
                         <i class="bi bi-house me-1"></i>Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'equipment.php' ? 'active' : '' ?>" href="/equipment.php">
+                    <a class="nav-link <?= $current_page === '../students/equipment.php' ? 'active' : '' ?>" href="../students/equipment.php">
                         <i class="bi bi-search me-1"></i>Browse Equipment
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'reservations.php' ? 'active' : '' ?>" href="/reservations.php">
+                    <a class="nav-link <?= $current_page === '../students/reservations.php' ? 'active' : '' ?>" href="../students/reservations.php">
                         <i class="bi bi-calendar me-1"></i>My Reservations
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'scan.php' ? 'active' : '' ?>" href="/scan.php">
+                    <a class="nav-link <?= $current_page === '../students/scan.php' ? 'active' : '' ?>" href="../students/scan.php">
                         <i class="bi bi-upc-scan me-1"></i>Scan QR
                     </a>
                 </li>
@@ -48,27 +48,27 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <?php elseif ($current_role === 'admin' || $current_role === 'super_admin'): ?>
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'dashboard.php' ? 'active' : '' ?>" href="/admin/dashboard.php">
+                    <a class="nav-link <?= $current_page === 'dashboard.php' ? 'active' : '' ?>" href="../admin/dashboard.php">
                         <i class="bi bi-speedometer2 me-1"></i>Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'equipment.php' ? 'active' : '' ?>" href="/admin/equipment.php">
+                    <a class="nav-link <?= $current_page === 'equipment.php' ? 'active' : '' ?>" href="../admin/equipment.php">
                         <i class="bi bi-tools me-1"></i>Equipment
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'users.php' ? 'active' : '' ?>" href="/admin/users.php">
+                    <a class="nav-link <?= $current_page === 'users.php' ? 'active' : '' ?>" href="../admin/users.php">
                         <i class="bi bi-people me-1"></i>Users
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'reports.php' ? 'active' : '' ?>" href="/admin/reports.php">
+                    <a class="nav-link <?= $current_page === 'reports.php' ? 'active' : '' ?>" href="../admin/reports.php">
                         <i class="bi bi-graph-up me-1"></i>Reports
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'maintenance.php' ? 'active' : '' ?>" href="/admin/maintenance.php">
+                    <a class="nav-link <?= $current_page === 'maintenance.php' ? 'active' : '' ?>" href="../admin/maintenance.php">
                         <i class="bi bi-wrench me-1"></i>Maintenance
                     </a>
                 </li>
@@ -78,22 +78,22 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <?php else: ?>
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link <?= $current_page === 'index.php' ? 'active' : '' ?>" href="/">
+                    <a class="nav-link <?= $current_page === '../../index.php' ? 'active' : '' ?>" href="/../../index.php">
                         <i class="bi bi-house me-1"></i>Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">
+                    <a class="nav-link" href="../../commingSoon.php">
                         <i class="bi bi-star me-1"></i>Features
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">
+                    <a class="nav-link" href="../../commingSoon.php">
                         <i class="bi bi-info-circle me-1"></i>About
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">
+                    <a class="nav-link" href="../../commingSoon.php">
                         <i class="bi bi-telephone me-1"></i>Contact
                     </a>
                 </li>
@@ -178,12 +178,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <?php else: ?>
                 <!-- Guest User Actions -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/login.php">
+                    <a class="nav-link" href="../../views/auth/login.php">
                         <i class="bi bi-box-arrow-in-right me-1"></i>Sign In
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-light ms-2" href="/register.php">
+                    <a class="btn btn-outline-light ms-2" href="../../views/auth/register.php">
                         <i class="bi bi-person-plus me-1"></i>Sign Up
                     </a>
                 </li>

@@ -152,7 +152,7 @@ ob_start();
                 
                 <!-- Footer -->
                 <div class="text-center mt-4 text-muted">
-                    <p>&copy; <?php echo date('Y'); ?> Your Company Name. All rights reserved.</p>
+                    <p>&copy; <?php echo date('Y'); ?> Gayan. All rights reserved.</p>
                 </div>
             </div>
         </div>
